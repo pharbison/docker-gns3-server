@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  gns3:
+    container_name: gns3
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - </path/to/data>:/data
+    network_mode: host
+    privileged: true
